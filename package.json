@@ -27,5 +27,8 @@
     "browser-sync": "^2.23.6",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1"
   }
 }
