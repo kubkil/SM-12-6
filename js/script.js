@@ -9,11 +9,12 @@ $(function() {
       countryName = 'Poland';
     }
     // wykonuje asynchronous HTTP (Ajax) request
-    $.ajax({
-      url: url + countryName,
-      method: 'GET',
-      success: showCountriesList(), // podaje co ma się wykonać gdy serwer odpowie prawidłowo
-    })
+    $.getJSON(url, showCountriesList);
+    // $.ajax({
+    //   url: url + countryName,
+    //   method: 'GET',
+    //   success: showCountriesList(), // podaje co ma się wykonać gdy serwer odpowie prawidłowo
+    // });
   }
 
   function showCountriesList(resp) { // resp - obiekt JSON, który przesyła do niej metoda .ajax() - czyli co?
