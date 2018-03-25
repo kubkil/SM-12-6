@@ -1,7 +1,7 @@
 $(function() {
 
   const url = "https://restcountries.eu/rest/v2/name/";
-  const countriesList = $('#countires');
+  const countriesList = $('#countries');
 
   function searchCountries() {
     let countryName = $('#country-name').val(); // The .val() method is primarily used to get the values of form elements such as input, select and textarea.
